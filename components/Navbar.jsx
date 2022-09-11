@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaDiscord, FaGithub, FaLinkedinIn } from "react-icons/fa";
+
+
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
 
