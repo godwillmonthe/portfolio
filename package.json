@@ -1,14 +1,10 @@
 {
-  "homepage": "https://SuperCoolNinja.github.io",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export && touch out/.nojekyll",
-    "build-ssg": "next build && next export && touch out/.nojekyll",
-    "deploy": "gh-pages -d out -t true",
     "start": "next start",
     "lint": "next lint"
   },
@@ -20,7 +16,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
-    "gh-pages": "^3.1.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
