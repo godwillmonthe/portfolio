@@ -16,7 +16,7 @@ export const Navbar = () => {
         <Link href="/">
           <Image
             className="hover:cursor-pointer"
-            src="/../public/assets/logo.png"
+            src="/assets/logo.png"
             alt="/"
             width="60"
             height="60"
@@ -25,23 +25,23 @@ export const Navbar = () => {
 
         <div>
           <ul className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
               <Link href="/">Home</Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
               <Link href="/">About</Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
               <Link href="/">Skills</Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
               <Link href="/">Projects</Link>
             </li>
 
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
               <Link href="/">Contact</Link>
             </li>
           </ul>
@@ -67,7 +67,7 @@ export const Navbar = () => {
               <Link href="/">
                 <Image
                   className="hover:cursor-pointer"
-                  src="/../public/assets/logo.png"
+                  src="/assets/logo.png"
                   alt="/"
                   width="70"
                   height="70"
