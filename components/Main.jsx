@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -18,19 +19,27 @@ export const Main = () => {
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full text-[#192030] shadow-md hover:shadow-sm hover:shadow-gray-800 shadow-gray-400 p-3 cursor-pointer md:scale-125 md:hover:scale-150 ease-in duration-300">
-              <FaLinkedin />
+              <Link passHref href="https://www.linkedin.com/in/samir-baatour/">
+                <a target="_blank" href="/">
+                  <FaLinkedin />
+                </a>
+              </Link>
             </div>
 
             <div className="rounded-full text-[#192030] shadow-md hover:shadow-sm hover:shadow-gray-800 shadow-gray-400 p-3 cursor-pointer md:scale-125 md:hover:scale-150 ease-in duration-300">
-              <FaGithub />
+              <Link passHref href="https://github.com/SuperCoolNinja">
+                <a target="_blank" href="/">
+                  <FaGithub />
+                </a>
+              </Link>
             </div>
 
             <div className="rounded-full text-[#192030] shadow-md hover:shadow-sm hover:shadow-gray-800 shadow-gray-400 p-3 cursor-pointer md:scale-125 md:hover:scale-150 ease-in duration-300">
-              <AiOutlineMail />
-            </div>
-
-            <div className="rounded-full text-[#192030] shadow-md hover:shadow-sm hover:shadow-gray-800 shadow-gray-400 p-3 cursor-pointer md:scale-125 md:hover:scale-150 ease-in duration-300">
-              <FaDiscord />
+              <Link passHref href="https://discord.gg/MRt884b5PD">
+                <a target="_blank" href="/">
+                  <FaDiscord />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
