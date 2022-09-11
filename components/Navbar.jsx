@@ -12,9 +12,9 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-20 shadow-xl z-[100]">
+    <div className="w-full h-20 shadow-md">
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
-        <Link href="/">
+        <Link href="#about">
           <Image
             className="hover:cursor-pointer"
             src="/assets/logo.png"
@@ -27,7 +27,7 @@ export const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
-              <Link href="/">Home</Link>
+              <Link href="#home">Home</Link>
             </li>
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
@@ -37,11 +37,11 @@ export const Navbar = () => {
             </li>
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
-              <Link href="/">Skills</Link>
+              <Link href="#skill">Skills</Link>
             </li>
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
-              <Link href="/">Projects</Link>
+              <Link href="#project">Projects</Link>
             </li>
           </ul>
 
@@ -62,8 +62,11 @@ export const Navbar = () => {
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
-              <Link href="/">
+            <div
+              className="flex w-full items-center justify-between"
+              onClick={() => setNav(false)}
+            >
+              <Link href="#about">
                 <Image
                   className="hover:cursor-pointer"
                   src="/assets/logo.png"
@@ -90,20 +93,20 @@ export const Navbar = () => {
 
           <div className="flex flex-col justify-center items-center">
             <ul className="uppercase font-semibold w-full text-center">
-              <li className="py-4 text-sm">
-                <Link href="/">Home</Link>
+              <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                <Link href="#home">Home</Link>
               </li>
 
-              <li className="py-4 text-sm">
-                <Link href="/">About</Link>
+              <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                <Link href="#about">About</Link>
               </li>
 
-              <li className="py-4 text-sm">
-                <Link href="/">Skills</Link>
+              <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                <Link href="#skill">Skills</Link>
               </li>
 
-              <li className="py-4 text-sm">
-                <Link href="/">Projects</Link>
+              <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                <Link href="#skill">Projects</Link>
               </li>
             </ul>
 
