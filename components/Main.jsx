@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { AiOutlineMail } from "react-icons/ai";
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Main = () => {
@@ -8,13 +7,13 @@ export const Main = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="py-3 md:text-8xl text-gray-600">
-            Je suis <span className=" text-[#192030]">Samir</span>
+            Hi, I'm <span className=" text-[#192030]">Samir</span>
           </h1>
           <h2 className="py-2 md:text-7xl text-gray-600">
-            Développeur Full Stack
+            A Full Stack Developer
           </h2>
           <p className="py-8 text-xl text-gray-500 font-bold">
-            Un passionné de programmation informatique depuis 2016.
+            A programming enthusiast since 2016.
           </p>
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

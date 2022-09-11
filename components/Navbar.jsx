@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaDiscord, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -52,7 +52,7 @@ export const Navbar = () => {
       </div>
 
       <div
-        className={nav ? "fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={nav ? "fixed left-0 top-0 w-full h-screen bg-black/70 z-[100]" : ""}
       >
         <div
           className={
@@ -86,7 +86,7 @@ export const Navbar = () => {
 
             <div className="border-b border-gray-300 my-8">
               <p className="font-semibold text-center text-lg">
-                Bienvenue sur mon portfolio !
+                Welcome to my portfolio !
               </p>
             </div>
           </div>
@@ -116,19 +116,30 @@ export const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%] gap-5">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <Link
+                    passHref
+                    href="https://www.linkedin.com/in/samir-baatour/"
+                  >
+                    <a target="_blank" href="/">
+                      <FaLinkedin />
+                    </a>
+                  </Link>
                 </div>
 
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <Link passHref href="https://github.com/SuperCoolNinja">
+                    <a target="_blank" href="/">
+                      <FaGithub />
+                    </a>
+                  </Link>
                 </div>
 
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaDiscord />
+                  <Link passHref href="https://discord.gg/MRt884b5PD">
+                    <a target="_blank" href="/">
+                      <FaDiscord />
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
