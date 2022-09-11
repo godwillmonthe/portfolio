@@ -6,7 +6,7 @@ export const Skills = () => {
     <div className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase font-bold">Skills</p>
-        <h2 className="py-2">Mes Compétences</h2>
+        <h2 className="pt-2 pb-5">Mes Compétences</h2>
 
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

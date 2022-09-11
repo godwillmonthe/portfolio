@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaDiscord, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -13,7 +12,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="w-full h-20 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
         <Link href="/">
           <Image
@@ -32,7 +31,9 @@ export const Navbar = () => {
             </li>
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
-              <Link href="/">About</Link>
+              <Link href="#about" className="scroll-smooth hover:scroll-auto">
+                About
+              </Link>
             </li>
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
@@ -41,10 +42,6 @@ export const Navbar = () => {
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
               <Link href="/">Projects</Link>
-            </li>
-
-            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
-              <Link href="/">Contact</Link>
             </li>
           </ul>
 
@@ -107,10 +104,6 @@ export const Navbar = () => {
 
               <li className="py-4 text-sm">
                 <Link href="/">Projects</Link>
-              </li>
-
-              <li className="py-4 text-sm">
-                <Link href="/">Contact</Link>
               </li>
             </ul>
 

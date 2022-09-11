@@ -1,10 +1,10 @@
 export const About = () => {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 flex sm:block flex-col gap-10 items-center text-center md:text-left">
           <p className="uppercase font-bold">À propos de moi</p>
-          <h2 className="py-2">Qui suis-je ?</h2>
+          <h2 className="pt-2 pb-5">Qui suis-je ?</h2>
 
           <p className="py-2 tracking-wide font-semibold text-gray-700">
             Salut, je suis <span className="font-bold">Samir 24 ans</span> et je
