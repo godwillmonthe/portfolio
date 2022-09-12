@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 
-export const Navbar = () => {
+export const Navbar = ({ t }) => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -27,21 +27,21 @@ export const Navbar = () => {
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
-              <Link href="#home">Home</Link>
+              <Link href="#home">{t("nav:home")}</Link>
             </li>
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
               <Link href="#about" className="scroll-smooth hover:scroll-auto">
-                About
+                {t("nav:about")}
               </Link>
             </li>
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
-              <Link href="#skill">Skills</Link>
+              <Link href="#skill">{t("nav:skill")}</Link>
             </li>
 
             <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-400 font-bold text-gray-500">
-              <Link href="#project">Projects</Link>
+              <Link href="#project">{t("nav:projects")}</Link>
             </li>
           </ul>
 
@@ -52,7 +52,9 @@ export const Navbar = () => {
       </div>
 
       <div
-        className={nav ? "fixed left-0 top-0 w-full h-screen bg-black/70 z-[100]" : ""}
+        className={
+          nav ? "fixed left-0 top-0 w-full h-screen bg-black/70 z-[100]" : ""
+        }
       >
         <div
           className={
@@ -86,7 +88,7 @@ export const Navbar = () => {
 
             <div className="border-b border-gray-300 my-8">
               <p className="font-semibold text-center text-lg">
-                Welcome to my portfolio !
+                {t("nav:welcome")} portfolio !
               </p>
             </div>
           </div>
@@ -94,19 +96,19 @@ export const Navbar = () => {
           <div className="flex flex-col justify-center items-center">
             <ul className="uppercase font-semibold w-full text-center">
               <li className="py-4 text-sm" onClick={() => setNav(false)}>
-                <Link href="#home">Home</Link>
+                <Link href="#home">{t('nav:home')}</Link>
               </li>
 
               <li className="py-4 text-sm" onClick={() => setNav(false)}>
-                <Link href="#about">About</Link>
+                <Link href="#about">{t('nav:about')}</Link>
               </li>
 
               <li className="py-4 text-sm" onClick={() => setNav(false)}>
-                <Link href="#skill">Skills</Link>
+                <Link href="#skill">{t('nav:skill')}</Link>
               </li>
 
               <li className="py-4 text-sm" onClick={() => setNav(false)}>
-                <Link href="#skill">Projects</Link>
+                <Link href="#project">{t('nav:projects')}</Link>
               </li>
             </ul>
 

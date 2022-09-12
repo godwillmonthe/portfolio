@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-export const Skills = () => {
+export const Skills = ({ t }) => {
   return (
     <div id="skill" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase font-bold">Skills</p>
-        <h2 className="pt-2 pb-5">My experiences</h2>
+        <h2 className="pt-2 pb-5">{t("skills:exp")}</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">

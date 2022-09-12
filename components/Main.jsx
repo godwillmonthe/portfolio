@@ -1,19 +1,17 @@
 import Link from "next/link";
 import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
 
-export const Main = () => {
+export const Main = ({ t }) => {
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="py-3 md:text-8xl text-gray-600">
-            Hi, I'm <span className=" text-[#192030]">Samir</span>
+            {t("hero:name")} <span className=" text-[#192030]">Samir</span>
           </h1>
-          <h2 className="py-2 md:text-7xl text-gray-600">
-            A Full Stack Developer
-          </h2>
+          <h2 className="py-2 md:text-7xl text-gray-600">{t("hero:work")}</h2>
           <p className="py-8 text-xl text-gray-500 font-bold">
-            A programming enthusiast since 2016.
+            {t("hero:work_description")}
           </p>
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
